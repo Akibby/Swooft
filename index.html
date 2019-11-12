@@ -29,7 +29,7 @@
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
 </head>
 
-<body class="sidebar-collapse">
+<body class="sidebar-collapse" style="width: 100%;">
     <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" color-on-scroll="100">
       <div class="container">
           <div class="navbar-translate">
@@ -38,7 +38,6 @@
                 <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" height="70px" width="70px"/>
               </div>
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
               <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="navbar-toggler-icon"></span>
@@ -48,10 +47,14 @@
           </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="active nav-item">
-                <a href="#pablo" class="nav-link">
+              <li class="nav-item dropdown">
+                <a href="#pablo" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Team S'wooft</a>
+                  <a class="dropdown-item" href="#">Community</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a href="#pablo" class="nav-link">
@@ -81,15 +84,11 @@
             </ul>
           </div>
         </div>
-      </nav>
-  <!-- <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/bg3.jpg')"> -->
+    </nav>
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('assets/img/indexdog.png')">
     <div class="container">
       <div class="row">
-        <div class="col-md-auto ml-auto mr-auto">
-          <!-- <div class="brand text-center">
-            <h2 class="title">Easy scheduling and reliable service for you means great care and big smiles for your pet.</h2>
-          </div> -->
+        <div class="col-md-8 ml-auto mr-auto">
             <div class="card">
                 <div class="card-header card-header-text card-header-info">
                   <div class="card-text">
@@ -97,7 +96,7 @@
                     <h3 class="card-title text-center">Let's Get Walking</h3>
                   </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body text-center">
                   <p style="font-size: 125%">Easy scheduling and reliable service for you means great care and big smiles for your pet.</p>
                   <div class="text-center">
                     <a href="http://www.facebook.com/swooftchicago" style="color: black; font-size: 150%;"><i class="fa fa-facebook-official"></i></a>
@@ -176,98 +175,91 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="container">
-    <div class="section text-center">
-      <h2 class="title">Our Mission</h2>
-      <div class="mission">
-        <div class="row">
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-rose">
-                  <i class="material-icons">emoji_people</i>
-                </div>
-                <div class="col-md-auto ml-auto mr-auto">
-                  <p>Loving, reliable, and professional dog walking & pet care in far NW Chicago</p>
+      <div class="section text-center">
+        <h2 class="title">Our Mission</h2>
+        <div class="mission">
+          <div class="row">
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-rose">
+                    <i class="material-icons">emoji_people</i>
+                  </div>
+                  <div class="col-md-auto ml-auto mr-auto">
+                    <p>Loving, reliable, and professional dog walking & pet care in far NW Chicago</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 ">
-              <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">emoji_nature</i>
-                </div>
-                <div class="col-md-auto ml-auto mr-auto">
-                  <p>Giving a "leg up" through pet rescue and volunteering</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">phonelink_ring</i>
-                </div>
-                <div class="col-md-auto ml-auto mr-auto">
-                  <p>Using social media to engage, and be a resource to, the greater Chicago pet community</p>
+              <div class="col-md-4 ">
+                <div class="info">
+                  <div class="icon icon-success">
+                    <i class="material-icons">emoji_nature</i>
+                  </div>
+                  <div class="col-md-auto ml-auto mr-auto">
+                    <p>Giving a "leg up" through pet rescue and volunteering</p>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="col-md-4">
+                <div class="info">
+                  <div class="icon icon-info">
+                    <i class="material-icons">phonelink_ring</i>
+                  </div>
+                  <div class="col-md-auto ml-auto mr-auto">
+                    <p>Using social media to engage, and be a resource to, the greater Chicago pet community</p>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="container">
       <div class="section text-center">
         <h2 class="title">Credentials</h2>
         <div class="credentials">
           <div class="row justify-content-center">
-            <div class="col-md-2">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/psi.png" class="img-fluid" /> 
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/fetchfind.png" class="img-fluid" /> 
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/petsitting.png" class="img-fluid" /> 
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/homeguide.png" class="img-fluid" style="max-width: 110px;" /> 
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/Licensed.png" class="img-fluid" /> 
               </div>
             </div>
-          </div>
-          <br />
-          <div class="row justify-content-center">
-            <div class="col-md-3">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/petcpr.png" class="img-fluid" /> 
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/cpps.png" class="img-fluid" /> 
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/yelp.png" class="img-fluid" /> 
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-auto">
               <div class="cred">
                 <img src="./assets/img/credentials/glassdoor.png" class="img-fluid" /> 
               </div>
@@ -275,12 +267,10 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="contianer">
       <div class="section text-center">
         <h2 class="title">What People Say</h2>
         <div class="team">
-          <div class="row justify-content-center">
+          <div class="row">
             <div class="col-md-4">
               <div class="team-player">
                 <div class="card card-plain">
@@ -290,7 +280,7 @@
                   <h4 class="card-title">Denise</h4>
                   <div class="card-body">
                     <blockquote class="blockquote">
-                      <p class="card-description">I can't even begin to express how excited our family is about S'wooft! Our concern was our big dog and thought this 145 Rottweiler beast might ruin this for us all. Gordon came running in with nubby tail wagging and took to both girls just like I did! I only wish we would have found S'wooft sooner!</p>
+                      <p class="card-description">I love S'wooft!  I know that my dogs are in good hands and are also getting lots of love and attention. They're also great about reinforcing the commands we use while with the dogs. Definitely recommend them!</p>
                     </blockquote>
                   </div>
                 </div>
@@ -332,7 +322,7 @@
     </div>
   </div>
   <footer class="footer footer-default">
-    <div class="container">
+    <div class="container ">
       <nav class="float-left">
         <ul>
           <li>
