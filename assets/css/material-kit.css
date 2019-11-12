@@ -16278,7 +16278,8 @@ footer .pull-center {
 }
 
 .card .card-header {
-  border-radius: 3px;
+  /* border-radius: 3px; */
+  border-radius: 20px;
   padding: 1rem 15px;
   margin-left: 15px;
   margin-right: 15px;
