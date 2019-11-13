@@ -17907,4 +17907,24 @@ footer .pull-center {
   }
 }
 
+.additionalcard {
+  padding-top: 3em;
+  padding-bottom: -1em;
+}
+
+.additionalimg {
+  padding-top: 4em;
+  margin-bottom: 4em;
+}
+
+.additionaltext {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 760px) {
+  .serviceareas ul, .serviceareas li {
+    margin: auto;
+  }
+}
+
 /*# sourceMappingURL=kit-free.css.map */
