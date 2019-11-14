@@ -13955,7 +13955,7 @@ textarea {
   color: inherit;
   padding: 0.9375rem;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   border-radius: 3px;
   line-height: 20px;
@@ -17930,10 +17930,10 @@ footer .pull-center {
 /*# sourceMappingURL=kit-free.css.map */
 
 .logo-image {
-  width: 70px;
-  height: 70px;
+  width: 93px;
+  height: 53px;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: visible;
   margin-top: -6px;
 }
 
