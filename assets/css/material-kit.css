@@ -17928,3 +17928,11 @@ footer .pull-center {
 }
 
 /*# sourceMappingURL=kit-free.css.map */
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
