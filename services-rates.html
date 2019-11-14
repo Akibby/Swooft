@@ -45,39 +45,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- Material Kit CSS -->
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
-
-  <script>
-    function selectDogCare() {
-      var starterCard = document.getElementById("initial-card-body");
-      var textEle = ["$18 - Half hour walks", "$30 - Hour walks", "$14 - 15min Let outs", "+$10 - Yard pick up",
-        "(we'll pick up any poop in your yard following a regular dog care service; extra fees may apply for significant pick up)",
-        "$16 - Happy hour walk", "(Half hour walk from 3-5pm, weekdays only)", "+$5 - Extra pet",
-        "+$5 - AM/PM (Sat/Sun and weekdays before 9am/after 4pm)"
-      ];
-      for (x of textEle) {
-        if (x.charAt(0) == "(") {
-          var pEle = document.createElement("p");
-          pEle.classList.add("text-sm-left");
-          pEle.append(document.createTextNode(x));
-          starterCard.appendChild(pEle);
-        } else {
-          var hEle = document.createElement("h6");
-          hEle.appendChild(document.createTextNode(x));
-          starterCard.appendChild(hEle);
-        }
-      }
-    };
-
-    function delInitCardBod() {
-      var starterCard = document.getElementById("initial-card-body");
-      while (starterCard.hasChildNodes()) {
-        starterCard.removeChild(starterCard.childNodes[0]);
-      }
-    };
-  </script>
 </head>
 
-<body class="sidebar-collapse" style="width: 100%;" onload="selectDogCare()">
+<body class="sidebar-collapse" style="width: 100%;" >
   <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" color-on-scroll="100">
     <div class="container">
       <div class="navbar-translate">
@@ -149,12 +119,12 @@
       <div class="section section-tabs">
         <h3 class="text-center">Check out our plans!</h3>
         <div class="row justify-content-center">
-          <div class="col-mad-auto">
+          <div class="col-md-auto">
             <div class="card card-nav-tabs">
               <div class="card-header card-header-info">
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
-                    <ul class="nav nav-tabs justify-content-center" data-tabs="tabs" onclick="delInitCardBod()">
+                    <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
                       <li class="nav-item">
                         <a class="nav-link active" href="#dog-care" id="dog-care-btn" data-toggle="tab">Dog Care</a>
                       </li>
@@ -183,7 +153,7 @@
               <div class="card-body">
                 <div id="initial-card-body"></div>
                 <div class="tab-content text-left">
-                  <div class="tab-pane" id="dog-care">
+                  <div class="tab-pane active show" id="dog-care">
                     <h6>$18 - Half hour walks</h6>
                     <h6>$30 - Hour walks</h6>
                     <h6>$14 - 15min Let outs</h6>
@@ -245,7 +215,7 @@
             <div class="row">
               <div class="col-lg-4 col-md-12">
                 <div class="additionalcard">
-                  <div class="card-header card-header-danger">
+                  <div class="card-header card-header-info">
                     Additional Info
                   </div>
                   <div class="card-body">
@@ -275,7 +245,7 @@
               </div>
               <div class="col-lg-4 col-md-12">
                 <div class="additionalcard">
-                  <div class="card-header card-header-danger">
+                  <div class="card-header card-header-info">
                     Holidays Observed
                   </div>
                   <div class="card-body">
@@ -345,7 +315,7 @@
             </div>
           </div>
           <div class="card card-nav-tabs">
-            <div class="card-header card-header-warning">
+            <div class="card-header card-header-info">
               Service Area
             </div>
             <div class="row serviceareas">
