@@ -48,7 +48,7 @@
    <?php 
      require 'simple_html_dom.php';
      define('WP_USE_THEMES', false);
-     require('../blog/wp-blog-header.php');
+     require('blog/wp-blog-header.php');
      function debug_to_console($data) {
        $output = json_encode($data);
    
@@ -203,7 +203,7 @@
                          echo '<img class="card-img-top" src="assets/img/swooft-logo-new-clear.png" alt="Card image cap">';
                        }
                        echo '<div class="card-body">';
-                       echo '<a href="?'.$recent_post['ID'].'">';
+                       echo '<a class="a-hidden" href="singleblog.php?id='.$recent_post['ID'].'">';
                        echo '<h4 class="card-title">'.$recent_post['post_title'].'</h4>';
                        echo '<p class="card-text a-hidden">'.substr($recent_post['post_content'], 0, 100).'...</p>';
                        echo '</a>';
