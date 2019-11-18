@@ -83,7 +83,7 @@
                About
              </a>
              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="dropdown-item" href="#">Team S'wooft</a>
+               <a class="dropdown-item" href="our-team.html">Team S'wooft</a>
                <a class="dropdown-item" href="#">Community</a>
              </div>
            </li>
@@ -93,7 +93,7 @@
              </a>
            </li>
            <li class="nav-item">
-             <a href="blog.html" class="nav-link">
+             <a href="blog.php" class="nav-link">
                Blog
              </a>
            </li>
