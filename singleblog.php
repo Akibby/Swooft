@@ -104,8 +104,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#pablo" class="nav-link">
-              Apply
+                 <a href="apply.html" class="nav-link">
+                   Apply
+                 </a>
             </a>
           </li>
           <li class="nav-item">
