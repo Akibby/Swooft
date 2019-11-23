@@ -129,7 +129,7 @@
              <div class="nav-tabs-wrapper">
                <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
                  <li class="nav-item">
-                   <a onclick="showAll()" class="nav-link active show" href="#" data-toggle="tab" style="">All Posts<div
+                   <a id="all" onclick="showAll()" class="category nav-link active show" href="#" data-toggle="tab" style="">All Posts<div
                        class="ripple-container"></div></a>
                  </li>
                  <li class="nav-item">
