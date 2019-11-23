@@ -127,19 +127,19 @@
             <div class="nav-tabs-wrapper">
               <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
               <li class="nav-item">
-                   <a onclick="showAll()" class="nav-link active show" href="#" data-toggle="tab" style="">All Posts<div
+                   <a id="all" onclick="showAll()" class="category nav-link active show" href="#" data-toggle="tab" style="">All Posts<div
                        class="ripple-container"></div></a>
                  </li>
                  <li class="nav-item">
-                   <a onclick="showOurCommunity()" class="nav-link" href="#" data-toggle="tab" style="">Our Community<div class="ripple-container">
+                   <a id="community" onclick="showOurCommunity()" class="category nav-link" href="#" data-toggle="tab" style="">Our Community<div class="ripple-container">
                      </div></a>
                  </li>
                  <li class="nav-item">
-                   <a onclick="showStaffSpotlight()" class="nav-link" href="#" data-toggle="tab" style="">Staff Spotlight<div class="ripple-container">
+                   <a id="spotlight" onclick="showStaffSpotlight()" class="category nav-link" href="#" data-toggle="tab" style="">Staff Spotlight<div class="ripple-container">
                      </div></a>
                  </li>
                  <li class="nav-item">
-                   <a onclick="showPetEducation()" class="nav-link" href="#" data-toggle="tab" style="">Pet Education<div class="ripple-container">
+                   <a id="education" onclick="showPetEducation()" class="category nav-link" href="#" data-toggle="tab" style="">Pet Education<div class="ripple-container">
                      </div></a>
                  </li>
               </ul>
@@ -196,11 +196,13 @@
                        $source = $img[0]->src;
                        echo '<div class="'.$category->name.' blogCard">';
                        echo '<div class="card mb-3 mr-3">';
+                       echo '<a href="singleblog.php?id='.$recent_post['ID'].'">';
                        if($source){
                          echo '<img class="card-img-top" src="'.$source.'" alt="Card image cap">';
                        } else {
                          echo '<img class="card-img-top" src="assets/img/swooft-logo-new-clear.png" alt="Card image cap">';
                        }
+                       echo '</a>';
                        echo '<div class="card-body">';
                        echo '<a class="a-hidden" href="singleblog.php?id='.$recent_post['ID'].'">';
                        echo '<h4 class="card-title">'.$recent_post['post_title'].'</h4>';
@@ -269,6 +271,7 @@
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
   <script type="text/javascript">
+    var ref = getUrlVars()["ref"];
      var allBlogCards = $(".blogCard");
      function showOurCommunity(){
        allBlogCards.show();
@@ -294,6 +297,34 @@
      function showAll(){
        allBlogCards.show();
      }
+     function getUrlVars() {
+      var vars = {};
+      var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+      });
+      return vars;
+     }
+     if(ref){
+      $('.category').removeClass('active');
+      switch (ref) {
+        case "all":
+          $('#all').toggleClass('active');
+          showAll();
+          break;
+        case "community":
+          showOurCommunity();
+          $('#community').toggleClass('active');
+          break;
+        case "spotlight":
+          showStaffSpotlight();
+          $('#spotlight').toggleClass('active');
+          break;
+        case "education":
+          showPetEducation();
+          $('#education').toggleClass('active');
+          break;
+      }
+    }
    </script>
 </body>
 
