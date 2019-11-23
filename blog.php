@@ -56,78 +56,80 @@
        echo "<script>console.log($output);</script>";
    }
    ?>
-</head>
-
-<body class="sidebar-collapse" style="width: 100%;">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-default" color-on-scroll="100">
-    <div class="container">
-      <div class="navbar-translate">
-        <a href="index.html">
-          <div class="logo-image">
-            <!-- <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" /> -->
-            <img src="assets/img/swooft.png" class="img-fluid" />
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a href="#pablo" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              About
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="our-team.html">Team S'wooft</a>
-              <a class="dropdown-item" href="#">Community</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="services-rates.html" class="nav-link">
-              Services & Rates
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="blog.html" class="nav-link">
-              Blog
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="faqs.html" class="nav-link">
-              FAQs
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#pablo" class="nav-link">
-              Apply
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="contact-us.html" class="nav-link">
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="page-header header-filter header-small" data-parallax="true"
-    style="background-image: url(assets/img/blog/blog-2.png); transform: translate3d(0px, 0px, 0px);"></div>
-  <div class="main main-raised">
-    <div class="container">
-      <div class="card card-nav-tabs card-plain">
-        <div class="card-header card-header-info">
-          <div class="nav-tabs-navigation">
-            <div class="nav-tabs-wrapper">
-              <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-              <li class="nav-item">
-                   <a id="all" onclick="showAll()" class="category nav-link active show" href="#" data-toggle="tab" style="">All Posts<div
+   
+ </head>
+ 
+ <body class="sidebar-collapse" style="width: 100%;">
+   <nav class="navbar navbar-color-on-scroll fixed-top navbar-expand-lg navbar-transparent" color-on-scroll="100">
+     <div class="container">
+       <div class="navbar-translate">
+         <a href="index.html">
+           <div class="logo-big">
+             <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" height="70px" width="70px" />
+           </div>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+           aria-label="Toggle navigation">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="navbar-toggler-icon"></span>
+           <span class="navbar-toggler-icon"></span>
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       </div>
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item dropdown">
+             <a href="#pablo" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               About
+             </a>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="our-team.html">Team S'wooft</a>
+               <a class="dropdown-item" href="community.html">Community</a>
+             </div>
+           </li>
+           <li class="nav-item">
+             <a href="services-rates.html" class="nav-link">
+               Services & Rates
+             </a>
+           </li>
+           <li class="nav-item">
+             <a href="blog.php" class="nav-link">
+               Blog
+             </a>
+           </li>
+           <li class="nav-item">
+             <a href="faqs.html" class="nav-link">
+               FAQs
+             </a>
+           </li>
+           <li class="nav-item">
+             <a href="#pablo" class="nav-link">
+               Apply
+             </a>
+           </li>
+           <li class="nav-item">
+             <a href="contact-us.html" class="nav-link">
+               Contact Us
+             </a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+   <div class="page-header header-filter header-small" data-parallax="true"
+     style="background-image: url(assets/img/blog/blog-2.png); transform: translate3d(0px, 0px, 0px);"></div>
+   <div class="main main-raised">
+     <div class="container">
+       <!-- <section class="section text-center"> -->
+       <div class="card card-nav-tabs card-plain">
+         <div class="card-header card-header-info">
+           <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+           <div class="nav-tabs-navigation">
+             <div class="nav-tabs-wrapper">
+               <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                 <li class="nav-item">
+                   <a onclick="showAll()" class="nav-link active show" href="#" data-toggle="tab" style="">All Posts<div
                        class="ripple-container"></div></a>
                  </li>
                  <li class="nav-item">
