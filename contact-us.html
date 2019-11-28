@@ -46,6 +46,7 @@
   <script src="https://kit.fontawesome.com/a196dee797.js" crossorigin="anonymous"></script>
   <!-- Material Kit CSS -->
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
+  
 </head>
 
 <body class="sidebar-collapse" style="width: 100%;">
@@ -123,55 +124,55 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-7 ml-3 mr-3">
-              <form class="contact-form" _lpchecked="1">
+              <form class="contact-form" _lpchecked="1" id="contact-form">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">First Name*</label>
-                      <input type="text" class="form-control">
+                      <input name="fName" type="text" class="form-control" required="required">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">Last Name*</label>
-                      <input type="text" class="form-control">
+                      <input name="lName" type="text" class="form-control" required="required">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">Email*</label>
-                      <input type="email" class="form-control">
+                      <input name="email" type="email" class="form-control" required="required">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">Phone*</label>
-                      <input type="tel" class="form-control">
+                      <input name="phone" type="tel" class="form-control" required="required">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">Street*</label>
-                      <input type="text" class="form-control">
+                      <input name="street" type="text" class="form-control" required="required">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">Apt#/Unit</label>
-                      <input type="text" class="form-control">
+                      <input name="aptnumber" type="text" class="form-control">
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">City*</label>
-                      <input type="text" class="form-control">
+                      <input name="city" type="text" class="form-control" required="required">
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="form-group bmd-form-group">
                       <!-- <label for="stateList">State*</label> -->
                       <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                      <select class="form-control selectpicker" data-style="btn btn-link" id="stateList">
+                      <select name="state" class="form-control selectpicker" data-style="btn btn-link" id="stateList" required="required">
                         <!-- <option value="select">State*</option> -->
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -230,21 +231,21 @@
                   <div class="col-md-4">
                     <div class="form-group bmd-form-group">
                       <label class="bmd-label-floating">ZIP*</label>
-                      <input type="text" class="form-control">
+                      <input name="zip" type="text" class="form-control" required="required">
                     </div>
                   </div>
                 </div>
                 <div class="form-group bmd-form-group">
                   <label for="exampleMessage" class="bmd-label-floating">Pet Name/Kind/Breed</label>
-                  <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                  <textarea name="pet" type="email" class="form-control" rows="4" id="exampleMessage" required="required"></textarea>
                 </div>
                 <div class="form-group bmd-form-group">
                   <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
-                  <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                  <textarea name="message" type="email" class="form-control" rows="4" id="exampleMessage" required="required"></textarea>
                 </div>
                 <div class="row">
                   <div class="col-md-4 ml-auto mr-auto text-center mb-2">
-                    <button class="btn btn-info btn-raised">
+                    <button id="submitbtn" type="submit" class="btn btn-info btn-raised">
                       Send Message
                     </button>
                   </div>
@@ -390,6 +391,20 @@
       b.innerHTML =
         'This activity will not function as intended using Internet Explorer, please use Edge, Firefox, or Chrome.'
     }
+    const $form = $('#contact-form'),
+          url = 'https://script.google.com/macros/s/AKfycbw2fQkkXUtq1-0Y_iutM4gP8segCv9V0WKUREmUZn1_5ciBOsg/exec';
+
+    $form.submit(function(e) {
+      e.preventDefault();
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeArray()
+      })
+
+      window.location.reload(false); 
+    });
   </script>
 </body>
 
