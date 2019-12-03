@@ -1,17 +1,8 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
+<!-- 
+  Author: Austin Kibler, Christian Reynolds
+  CSCI 426 Fall 2019
+  File: singleblog.php
+ -->
 
 <!DOCTYPE html>
 <html lang="en" class="nav">
@@ -64,7 +55,6 @@
       <div class="navbar-translate">
         <a href="index.html">
           <div class="logo-image">
-            <!-- <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" /> -->
             <img src="assets/img/swooft.png" class="img-fluid" />
           </div>
         </a>
@@ -370,8 +360,6 @@
               echo '</a>';
               echo '<p class="card-text">';
               echo '<small class="text-muted">Posted ' . $sincepostedstr . '</small>';
-              // echo '<a href="#" class="float-right" id="commentlink"><small class="text-muted">Write a
-              //      comment</small></a>';
               echo '</p>';
               echo '</div>';
               echo '</div>';
@@ -452,3 +440,17 @@
 </body>
 
 </html>
+
+ <!--
+ =========================================================
+ * Material Kit - v2.0.6
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->

@@ -1,17 +1,8 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
+<!-- 
+  Author: Austin Kibler
+  CSCI 426 Fall 2019
+  File: contact-us.html
+ -->
 
 <!DOCTYPE html>
 <html lang="en" class="nav">
@@ -46,19 +37,18 @@
   <script src="https://kit.fontawesome.com/a196dee797.js" crossorigin="anonymous"></script>
   <!-- Material Kit CSS -->
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
-  
+
 </head>
 
 <body class="sidebar-collapse" style="width: 100%;">
   <nav class="navbar fixed-top navbar-expand-lg navbar-default" color-on-scroll="100">
     <div class="container">
-        <div class="navbar-translate">
-          <a href="index.html">
-            <div class="logo-image">
-              <!-- <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" /> -->
-              <img src="assets/img/swooft.png" class="img-fluid" />
-            </div>
-          </a>
+      <div class="navbar-translate">
+        <a href="index.html">
+          <div class="logo-image">
+            <img src="assets/img/swooft.png" class="img-fluid" />
+          </div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -95,9 +85,9 @@
             </a>
           </li>
           <li class="nav-item">
-                 <a href="apply.html" class="nav-link">
-                   Apply
-                 </a>
+            <a href="apply.html" class="nav-link">
+              Apply
+            </a>
             </a>
           </li>
           <li class="nav-item">
@@ -170,10 +160,8 @@
                   </div>
                   <div class="col-md-4">
                     <div class="form-group bmd-form-group">
-                      <!-- <label for="stateList">State*</label> -->
-                      <!-- <label for="exampleFormControlSelect1">Example select</label> -->
-                      <select name="state" class="form-control selectpicker" data-style="btn btn-link" id="stateList" required="required">
-                        <!-- <option value="select">State*</option> -->
+                      <select name="state" class="form-control selectpicker" data-style="btn btn-link" id="stateList"
+                        required="required">
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -237,11 +225,13 @@
                 </div>
                 <div class="form-group bmd-form-group">
                   <label for="exampleMessage" class="bmd-label-floating">Pet Name/Kind/Breed</label>
-                  <textarea name="pet" type="email" class="form-control" rows="4" id="exampleMessage" required="required"></textarea>
+                  <textarea name="pet" type="email" class="form-control" rows="4" id="exampleMessage"
+                    required="required"></textarea>
                 </div>
                 <div class="form-group bmd-form-group">
                   <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
-                  <textarea name="message" type="email" class="form-control" rows="4" id="exampleMessage" required="required"></textarea>
+                  <textarea name="message" type="email" class="form-control" rows="4" id="exampleMessage"
+                    required="required"></textarea>
                 </div>
                 <div class="row">
                   <div class="col-md-4 ml-auto mr-auto text-center mb-2">
@@ -338,10 +328,13 @@
           </li>
           <li>
           </li>
-          <a href="http://www.facebook.com/swooftchicago" style="color: black;"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://www.facebook.com/swooftchicago" style="color: black;"><i
+              class="fab fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/swooftchicago/" style="color: black"><i class="fab fa-instagram"></i></a>
-          <a href="http://www.yelp.com/biz/swooft-dog-walking-and-pet-care-chicago" style="color: black"><i class="fab fa-yelp"></i></a>
-          <a href="https://www.youtube.com/channel/UC37oPPjkBDbl7fgrgQ9ekzA?view_as=subscriber" style="color: black;"><i class="fab fa-youtube"></i></a>
+          <a href="http://www.yelp.com/biz/swooft-dog-walking-and-pet-care-chicago" style="color: black"><i
+              class="fab fa-yelp"></i></a>
+          <a href="https://www.youtube.com/channel/UC37oPPjkBDbl7fgrgQ9ekzA?view_as=subscriber" style="color: black;"><i
+              class="fab fa-youtube"></i></a>
         </ul>
         <p>3943 N. Austin Ave. Chicago, IL 60634</p>
       </nav>
@@ -392,9 +385,9 @@
         'This activity will not function as intended using Internet Explorer, please use Edge, Firefox, or Chrome.'
     }
     const $form = $('#contact-form'),
-          url = 'https://script.google.com/macros/s/AKfycbw2fQkkXUtq1-0Y_iutM4gP8segCv9V0WKUREmUZn1_5ciBOsg/exec';
+      url = 'https://script.google.com/macros/s/AKfycbw2fQkkXUtq1-0Y_iutM4gP8segCv9V0WKUREmUZn1_5ciBOsg/exec';
 
-    $form.submit(function(e) {
+    $form.submit(function (e) {
       e.preventDefault();
       var jqxhr = $.ajax({
         url: url,
@@ -403,9 +396,23 @@
         data: $form.serializeArray()
       })
 
-      window.location.reload(false); 
+      window.location.reload(false);
     });
   </script>
 </body>
 
 </html>
+
+<!--
+ =========================================================
+ * Material Kit - v2.0.6
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->

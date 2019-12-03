@@ -1,17 +1,8 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
+<!-- 
+  Author: Austin Kibler, Christian Reynolds
+  CSCI 426 Fall 2019
+  File: blog.php
+ -->
 
 <!DOCTYPE html>
 <html lang="en" class="nav">
@@ -65,7 +56,6 @@
       <div class="navbar-translate">
         <a href="index.html">
           <div class="logo-image">
-            <!-- <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" /> -->
             <img src="assets/img/swooft.png" class="img-fluid" />
           </div>
         </a>
@@ -120,10 +110,8 @@
   <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(assets/img/blog/blog-2.png); transform: translate3d(0px, 0px, 0px);"></div>
   <div class="main main-raised">
     <div class="container">
-      <!-- <section class="section text-center"> -->
       <div class="card card-nav-tabs card-plain">
         <div class="card-header card-header-info">
-          <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
           <div class="nav-tabs-navigation">
             <div class="nav-tabs-wrapper">
               <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
@@ -210,8 +198,6 @@
                     echo '</a>';
                     echo '<p class="card-text">';
                     echo '<small class="text-muted">Posted ' . $sincepostedstr . '</small>';
-                    // echo '<a href="#" class="float-right" id="commentlink"><small class="text-muted">Write a
-                    //      comment</small></a>';
                     echo '</p>';
                     echo '</div>';
                     echo '</div>';
@@ -220,7 +206,6 @@
                   ?>
                 </div>
               </div>
-              <!-- </section> -->
             </div>
           </div>
         </div>
@@ -331,3 +316,17 @@
 </body>
 
 </html>
+
+ <!--
+ =========================================================
+ * Material Kit - v2.0.6
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->

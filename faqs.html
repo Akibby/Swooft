@@ -1,17 +1,8 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
-
+<!-- 
+  Author: Austin Kibler
+  CSCI 426 Fall 2019
+  File: faqs.html
+ -->
 
 <!DOCTYPE html>
 <html lang="en" class="nav">
@@ -48,24 +39,23 @@
   <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
 
   <script>
-      function toggleCard(item) {
-        var id = item.getAttribute('href').slice(1);
-        var answer = document.getElementById(id);
-        answer.classList.toggle("active");
-      }
-    </script>
+    function toggleCard(item) {
+      var id = item.getAttribute('href').slice(1);
+      var answer = document.getElementById(id);
+      answer.classList.toggle("active");
+    }
+  </script>
 </head>
 
 <body class="sidebar-collapse" style="width: 100%;">
   <nav class="navbar fixed-top navbar-expand-lg navbar-default" color-on-scroll="100">
     <div class="container">
-        <div class="navbar-translate">
-          <a href="index.html">
-            <div class="logo-image">
-              <!-- <img src="assets/img/swooft-logo-new-clear.png" class="img-fluid" /> -->
-              <img src="assets/img/swooft.png" class="img-fluid" />
-            </div>
-          </a>
+      <div class="navbar-translate">
+        <a href="index.html">
+          <div class="logo-image">
+            <img src="assets/img/swooft.png" class="img-fluid" />
+          </div>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -102,9 +92,9 @@
             </a>
           </li>
           <li class="nav-item">
-                 <a href="apply.html" class="nav-link">
-                   Apply
-                 </a>
+            <a href="apply.html" class="nav-link">
+              Apply
+            </a>
             </a>
           </li>
           <li class="nav-item">
@@ -128,619 +118,671 @@
         <div class="faqs">
           <div class="row">
             <div class="card-deck">
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A1" data-toggle="tab" onclick="toggleCard(this)" >Q: What does S'wooft mean?</a>
-                            </li>
-                          </ul>
-                        </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A1" data-toggle="tab" onclick="toggleCard(this)">Q: What does
+                              S'wooft mean?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A1">
-                          <p class="card-text">A: It's just a fun name referring to our furry friends ("woof") and our
-                            fabulous walkers (who are "swift"). You can also check out the Urban Dictionary definition of
-                            swooft.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A1">
+                        <p class="card-text">A: It's just a fun name referring to our furry friends ("woof") and our
+                          fabulous walkers (who are "swift"). You can also check out the Urban Dictionary definition of
+                          swooft.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A2" data-toggle="tab" onclick="toggleCard(this)" >Q: What are the advantages of a dog walker
-                                over a daycare or kennels?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A2" data-toggle="tab" onclick="toggleCard(this)">Q: What are the
+                              advantages of a dog walker
+                              over a daycare or kennels?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A2">
-                          <p class="card-text">A: Having a dog walker allows your dog to maintain their regular schedule in
-                            a familiar home environment while also reinforcing training commands and getting daily exercise.
-                            In some cases, common dog illnesses can be contracted in a daycare or kennel environment, making
-                            it unsafe for non-vaccinated puppies and some older dogs. Dog walking or in-home vacation care
-                            are also a safe alternative for dogs that are aggressive toward other animals. All of that said,
-                            both options have definite pros and we can help assess and recommend the best fit for your pet's
-                            needs. If we aren't the best fit, we likely can recommend a quality care provider who would be!
-                          </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A2">
+                        <p class="card-text">A: Having a dog walker allows your dog to maintain their regular schedule
+                          in
+                          a familiar home environment while also reinforcing training commands and getting daily
+                          exercise.
+                          In some cases, common dog illnesses can be contracted in a daycare or kennel environment,
+                          making
+                          it unsafe for non-vaccinated puppies and some older dogs. Dog walking or in-home vacation care
+                          are also a safe alternative for dogs that are aggressive toward other animals. All of that
+                          said,
+                          both options have definite pros and we can help assess and recommend the best fit for your
+                          pet's
+                          needs. If we aren't the best fit, we likely can recommend a quality care provider who would
+                          be!
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A3" data-toggle="tab" onclick="toggleCard(this)" >Q: What are your credentials?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A3" data-toggle="tab" onclick="toggleCard(this)">Q: What are your
+                              credentials?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A3">
-                          <p class="card-text">A: We’re a Chicago-licensed business, insured and bonded, and a proud member
-                            of PSI (Pet Sitters International). We're also an approved pet care service through FetchFind
-                            and Petsitting.com and all of our staff are required to pass background and reference checks
-                            upon hiring, as well as Pet First Aid/CPR Certification and additional training. Your pets are
-                            family, and we don't take that lightly! You can learn more about our credentials and
-                            endorsements here.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A3">
+                        <p class="card-text">A: We’re a Chicago-licensed business, insured and bonded, and a proud
+                          member
+                          of PSI (Pet Sitters International). We're also an approved pet care service through FetchFind
+                          and Petsitting.com and all of our staff are required to pass background and reference checks
+                          upon hiring, as well as Pet First Aid/CPR Certification and additional training. Your pets are
+                          family, and we don't take that lightly! You can learn more about our credentials and
+                          endorsements here.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A4" data-toggle="tab" onclick="toggleCard(this)" >Q: When is payment due? What forms of payment
-                                do you accept?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A4" data-toggle="tab" onclick="toggleCard(this)">Q: When is
+                              payment due? What forms of payment
+                              do you accept?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A4">
-                          <p class="card-text">A: Billing occurs every 4 weeks. We accept Chase QuickPay/Zelle and credit
-                            card (preferred). All credit cards will be automatically charged for your convenience.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A4">
+                        <p class="card-text">A: Billing occurs every 4 weeks. We accept Chase QuickPay/Zelle and credit
+                          card (preferred). All credit cards will be automatically charged for your convenience.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A5" data-toggle="tab" onclick="toggleCard(this)" >Q: What services do you provide?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A5" data-toggle="tab" onclick="toggleCard(this)">Q: What services
+                              do you provide?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A5">
-                          <p class="card-text">A: We offer daily dog walks, cat care, vacation pet care, as well as other
-                            pet services like wedding pet care, pet taxi, and yard cleanup. We also have evening and weekend
-                            availability. We do not offer in-home overnight care or boarding.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A5">
+                        <p class="card-text">A: We offer daily dog walks, cat care, vacation pet care, as well as other
+                          pet services like wedding pet care, pet taxi, and yard cleanup. We also have evening and
+                          weekend
+                          availability. We do not offer in-home overnight care or boarding.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A6" data-toggle="tab" onclick="toggleCard(this)" >Q: What if I need to add a walk with short
-                                notice?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A6" data-toggle="tab" onclick="toggleCard(this)">Q: What if I
+                              need to add a walk with short
+                              notice?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A6">
-                          <p class="card-text">A: We can generally adjust with short notice and make every effort to
-                            accommodate existing clients, and new clients if possible. Same day single service bookings will
-                            incur a $10 fee, next day bookings a $5 fee, and vacation care bookings requested within less
-                            than 72 hours of the first visit will be an additional $20.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A6">
+                        <p class="card-text">A: We can generally adjust with short notice and make every effort to
+                          accommodate existing clients, and new clients if possible. Same day single service bookings
+                          will
+                          incur a $10 fee, next day bookings a $5 fee, and vacation care bookings requested within less
+                          than 72 hours of the first visit will be an additional $20.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A7" data-toggle="tab" onclick="toggleCard(this)" >Q: What areas do you service?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A7" data-toggle="tab" onclick="toggleCard(this)">Q: What areas do
+                              you service?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A7">
-                          <p class="card-text">A: We currently serve the far northwest Chicago neighborhoods and surrounding
-                            area (please see Service Area under "Contact Us").</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A7">
+                        <p class="card-text">A: We currently serve the far northwest Chicago neighborhoods and
+                          surrounding
+                          area (please see Service Area under "Contact Us").</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A8" data-toggle="tab" onclick="toggleCard(this)" >Q: How many dogs do you walk at a time?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A8" data-toggle="tab" onclick="toggleCard(this)">Q: How many dogs
+                              do you walk at a time?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A8">
-                          <p class="card-text">A: We do not walk in packs, but will walk multiple dogs (up to 3 if safe to
-                            do so) from one household together.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A8">
+                        <p class="card-text">A: We do not walk in packs, but will walk multiple dogs (up to 3 if safe to
+                          do so) from one household together.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A9" data-toggle="tab" onclick="toggleCard(this)" >Q: Will I have the same walker every day?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A9" data-toggle="tab" onclick="toggleCard(this)">Q: Will I have
+                              the same walker every day?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A9">
-                          <p class="card-text">A: As much as possible, we try to have a regular walker and a regular
-                            subsitute for each client. That said, it's difficult to predict changes in walker schedules so
-                            our service agreement includes client permission for any S'wooft dog walker/pet sitter to
-                            provide services. All of our team members are fully background and reference checked, and we
-                            have full confidence they will deliver great care for your pet(s)! If you ever have any concerns
-                            regarding a walker, please contact us immediately</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A9">
+                        <p class="card-text">A: As much as possible, we try to have a regular walker and a regular
+                          subsitute for each client. That said, it's difficult to predict changes in walker schedules so
+                          our service agreement includes client permission for any S'wooft dog walker/pet sitter to
+                          provide services. All of our team members are fully background and reference checked, and we
+                          have full confidence they will deliver great care for your pet(s)! If you ever have any
+                          concerns
+                          regarding a walker, please contact us immediately</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A10" data-toggle="tab" onclick="toggleCard(this)" >Q: How many dogs do you walk at a time?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A10" data-toggle="tab" onclick="toggleCard(this)">Q: How many
+                              dogs do you walk at a time?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A10">
-                          <p class="card-text">A: We do not walk in packs, but will walk multiple dogs (up to 3 if safe to
-                            do so) from one household together.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A10">
+                        <p class="card-text">A: We do not walk in packs, but will walk multiple dogs (up to 3 if safe to
+                          do so) from one household together.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A11" data-toggle="tab" onclick="toggleCard(this)" >Q: What if I only need one walk every once
-                                in a while?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A11" data-toggle="tab" onclick="toggleCard(this)">Q: What if I
+                              only need one walk every once
+                              in a while?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A11">
-                          <p class="card-text">A: We are primarily set up for, and therefore give scheduling priority to,
-                            pet families needing at least two walks a week. Sporadic service requests are fulfilled based on
-                            staff availability. If we aren't the right fit for that reason, we'll be glad to refer you to
-                            other pet care providers.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A11">
+                        <p class="card-text">A: We are primarily set up for, and therefore give scheduling priority to,
+                          pet families needing at least two walks a week. Sporadic service requests are fulfilled based
+                          on
+                          staff availability. If we aren't the right fit for that reason, we'll be glad to refer you to
+                          other pet care providers.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A12" data-toggle="tab" onclick="toggleCard(this)" >Q: How do you keep my keys, home, and
-                                possessions secure?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A12" data-toggle="tab" onclick="toggleCard(this)">Q: How do you
+                              keep my keys, home, and
+                              possessions secure?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A12">
-                          <p class="card-text">A: Your security is one of our top priorities! All of our dog walkers are
-                            bonded and background checked so your pet can feel at ease with our team of professional pet
-                            care experts. We require all customers to have a key lock box so keys aren't changing hands. If
-                            you choose to have us keep a backup key, it will be coded and stored in a secure location,
-                            separate from any files or information that would connect the key to your address. In the highly
-                            unlikely event that your keys are lost, it is covered under our business liability insurance and
-                            your entire house would be re-keyed (if desired) at no cost to you. </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A12">
+                        <p class="card-text">A: Your security is one of our top priorities! All of our dog walkers are
+                          bonded and background checked so your pet can feel at ease with our team of professional pet
+                          care experts. We require all customers to have a key lock box so keys aren't changing hands.
+                          If
+                          you choose to have us keep a backup key, it will be coded and stored in a secure location,
+                          separate from any files or information that would connect the key to your address. In the
+                          highly
+                          unlikely event that your keys are lost, it is covered under our business liability insurance
+                          and
+                          your entire house would be re-keyed (if desired) at no cost to you. </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A13" data-toggle="tab" onclick="toggleCard(this)" >Q: I don't need regular weekly walks but
-                                need help when I'm out of town on vacation. Do you provide vacation care?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A13" data-toggle="tab" onclick="toggleCard(this)">Q: I don't need
+                              regular weekly walks but
+                              need help when I'm out of town on vacation. Do you provide vacation care?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A13">
-                          <p class="card-text">A: Yes! We offer vacation care in the form of multiple visits per day. An
-                            initial consultation will need to be scheduled to set up services and a key lock box is required
-                            for all vacation care services.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A13">
+                        <p class="card-text">A: Yes! We offer vacation care in the form of multiple visits per day. An
+                          initial consultation will need to be scheduled to set up services and a key lock box is
+                          required
+                          for all vacation care services.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A14" data-toggle="tab" onclick="toggleCard(this)" >Q: May I book visits through my pet sitter
-                                directly?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A14" data-toggle="tab" onclick="toggleCard(this)">Q: May I book
+                              visits through my pet sitter
+                              directly?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A14">
-                          <p class="card-text">A: No. All visits should be booked through our scheduling app or by
-                            contacting S’wooft by email (schedule@swooftchicago.com). </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A14">
+                        <p class="card-text">A: No. All visits should be booked through our scheduling app or by
+                          contacting S’wooft by email (schedule@swooftchicago.com). </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A15" data-toggle="tab" onclick="toggleCard(this)" >Q: I'll have a family member checking on my
-                                pet, as well. Is that okay?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A15" data-toggle="tab" onclick="toggleCard(this)">Q: I'll have a
+                              family member checking on my
+                              pet, as well. Is that okay?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A15">
-                          <p class="card-text">A: We generally do not accept "share sits" and will approach this on a case
-                            by case basis. If anyone other than a S'wooft team member is going to be in the home during or
-                            between visits, we may not be held responsible for any liabilities during the care period. </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A15">
+                        <p class="card-text">A: We generally do not accept "share sits" and will approach this on a case
+                          by case basis. If anyone other than a S'wooft team member is going to be in the home during or
+                          between visits, we may not be held responsible for any liabilities during the care period.
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A16" data-toggle="tab" onclick="toggleCard(this)" >Q: Are your walkers employees or
-                                contractors?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A16" data-toggle="tab" onclick="toggleCard(this)">Q: Are your
+                              walkers employees or
+                              contractors?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A16">
-                          <p class="card-text">A: All of our daily dog walkers are W2 employees who are Pet First Aid/CPR
-                            Certified and covered under Workers Comp, in addition to the bonding/insurance that extends to
-                            all of our staff. We also have contractors who cover our cat sitting and overflow dog care. All
-                            of our staff undergo the same screening process and we have full confidence in their ability to
-                            provide excellent care!</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A16">
+                        <p class="card-text">A: All of our daily dog walkers are W2 employees who are Pet First Aid/CPR
+                          Certified and covered under Workers Comp, in addition to the bonding/insurance that extends to
+                          all of our staff. We also have contractors who cover our cat sitting and overflow dog care.
+                          All
+                          of our staff undergo the same screening process and we have full confidence in their ability
+                          to
+                          provide excellent care!</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A17" data-toggle="tab" onclick="toggleCard(this)" >Q: Do you only accept well-trained or
-                                animal-friendly dogs?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A17" data-toggle="tab" onclick="toggleCard(this)">Q: Do you only
+                              accept well-trained or
+                              animal-friendly dogs?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A17">
-                          <p class="card-text">A: No. We accept dogs at a range of temperaments, including dogs that may not
-                            necessarily be friendly with other animals/people. That said, overly aggressive dogs may be
-                            denied service at our discretion during the initial consultation or if a pet's behavior declines
-                            over time after starting services. Dog walking often helps with training. We like to know and
-                            use whatever commands and behaviors you and your pet are practicing so we can reinforce the
-                            behaviors you want to see with your dog. In cases where a dog is unable to be easily controlled
-                            on a walk or may be aggressive toward other animals, our walkers use extra precaution during the
-                            walk and we may ask that a different leash, collar, or harness be purchased to continue
-                            services. </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A17">
+                        <p class="card-text">A: No. We accept dogs at a range of temperaments, including dogs that may
+                          not
+                          necessarily be friendly with other animals/people. That said, overly aggressive dogs may be
+                          denied service at our discretion during the initial consultation or if a pet's behavior
+                          declines
+                          over time after starting services. Dog walking often helps with training. We like to know and
+                          use whatever commands and behaviors you and your pet are practicing so we can reinforce the
+                          behaviors you want to see with your dog. In cases where a dog is unable to be easily
+                          controlled
+                          on a walk or may be aggressive toward other animals, our walkers use extra precaution during
+                          the
+                          walk and we may ask that a different leash, collar, or harness be purchased to continue
+                          services. </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A18" data-toggle="tab" onclick="toggleCard(this)" >Q: May I give my dog walker a gratuity?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A18" data-toggle="tab" onclick="toggleCard(this)">Q: May I give
+                              my dog walker a gratuity?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A18">
-                          <p class="card-text">A: Absolutely! You can leave cash or a gift card for your sitter (clearly
-                            labeled with their name), or give a tip through the mobile app. We appreciate your generosity
-                            toward our staff!</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A18">
+                        <p class="card-text">A: Absolutely! You can leave cash or a gift card for your sitter (clearly
+                          labeled with their name), or give a tip through the mobile app. We appreciate your generosity
+                          toward our staff!</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A19" data-toggle="tab" onclick="toggleCard(this)" >Q: Can you walk my dog at 11:15am every
-                                day?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A19" data-toggle="tab" onclick="toggleCard(this)">Q: Can you walk
+                              my dog at 11:15am every
+                              day?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A19">
-                          <p class="card-text">A: We’ll try our best. In order to make scheduling multiple clients every day
-                            possible, we require at least a 2hour window of time for every scheduled walk. Regularly
-                            scheduled clients will be given priority over occasional clients or last minute requests,
-                            especially during our peak daytime hours (Mon-Fri 9am-4pm). </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A19">
+                        <p class="card-text">A: We’ll try our best. In order to make scheduling multiple clients every
+                          day
+                          possible, we require at least a 2hour window of time for every scheduled walk. Regularly
+                          scheduled clients will be given priority over occasional clients or last minute requests,
+                          especially during our peak daytime hours (Mon-Fri 9am-4pm). </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A20" data-toggle="tab" onclick="toggleCard(this)" >Q: What do you do if the weather is
-                                terrible?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A20" data-toggle="tab" onclick="toggleCard(this)">Q: What do you
+                              do if the weather is
+                              terrible?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A20">
-                          <p class="card-text">A: Chicago weather can be unpredictable, but our walkers provide full walks
-                            (as much as your pup will allow), rain or shine (or snow!). That said, if there is severe
-                            weather such as a lightning storm or below zero temperatures that would be unsafe for both the
-                            pets and walkers, they will do a shorter let out and spend the remainder of the time inside with
-                            your pet, playing and giving them attention!</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A20">
+                        <p class="card-text">A: Chicago weather can be unpredictable, but our walkers provide full walks
+                          (as much as your pup will allow), rain or shine (or snow!). That said, if there is severe
+                          weather such as a lightning storm or below zero temperatures that would be unsafe for both the
+                          pets and walkers, they will do a shorter let out and spend the remainder of the time inside
+                          with
+                          your pet, playing and giving them attention!</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A21" data-toggle="tab" onclick="toggleCard(this)" >Q: My dog doesn't really do well on walks.
-                                What other options do I have?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A21" data-toggle="tab" onclick="toggleCard(this)">Q: My dog
+                              doesn't really do well on walks.
+                              What other options do I have?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A21">
-                          <p class="card-text">A: If you have a fully fenced and secure backyard, we can spend the time with
-                            your dog in the backyard (length of time/pricing would be the same). Several of our clients use
-                            this option for various reasons and the dogs love it!</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A21">
+                        <p class="card-text">A: If you have a fully fenced and secure backyard, we can spend the time
+                          with
+                          your dog in the backyard (length of time/pricing would be the same). Several of our clients
+                          use
+                          this option for various reasons and the dogs love it!</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A22" data-toggle="tab" onclick="toggleCard(this)" >Q: Do you offer a referral program?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A22" data-toggle="tab" onclick="toggleCard(this)">Q: Do you offer
+                              a referral program?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A22">
-                          <p class="card-text">A: For each referral you give S’wooft that results in a regular client, we
-                            will credit your account $20. Ask us about other monthly promotions for new and existing
-                            clients!</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A22">
+                        <p class="card-text">A: For each referral you give S’wooft that results in a regular client, we
+                          will credit your account $20. Ask us about other monthly promotions for new and existing
+                          clients!</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A23" data-toggle="tab" onclick="toggleCard(this)" >Q: What is your cancellation policy?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A23" data-toggle="tab" onclick="toggleCard(this)">Q: What is your
+                              cancellation policy?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A23">
-                          <p class="card-text">A: To be fair to other clients and assist in walker scheduling, we appreciate
-                            cancellations as soon as you know you won’t need our services. Regular daily services must be
-                            cancelled at least 2 hours before the service time window starts in order to not be charged.
-                            Cancellations made within 2 hours of the service will incur a $10 fee.</p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A23">
+                        <p class="card-text">A: To be fair to other clients and assist in walker scheduling, we
+                          appreciate
+                          cancellations as soon as you know you won’t need our services. Regular daily services must be
+                          cancelled at least 2 hours before the service time window starts in order to not be charged.
+                          Cancellations made within 2 hours of the service will incur a $10 fee.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                  <div class="card card-nav-tabs">
-                    <div class="card-header card-header-info">
-                      <div class="nav-tabs-navigation">
-                        <div class="nav-tabs-wrapper">
-                          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#A24" data-toggle="tab" onclick="toggleCard(this)" >Q: I’d like to be a S'wooft walker! What do
-                                I need to do?</a>
-                            </li>
-                          </ul>
-                        </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card card-nav-tabs">
+                  <div class="card-header card-header-info">
+                    <div class="nav-tabs-navigation">
+                      <div class="nav-tabs-wrapper">
+                        <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#A24" data-toggle="tab" onclick="toggleCard(this)">Q: I’d like to
+                              be a S'wooft walker! What do
+                              I need to do?</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="card-body">
-                      <div class="tab-content text-left">
-                        <div class="tab-pane" id="A24">
-                          <p class="card-text">A: Fantastic! Visit our Apply page to see our open positions and to apply
-                            (please note we can't interview without a resume). </p>
-                        </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content text-left">
+                      <div class="tab-pane" id="A24">
+                        <p class="card-text">A: Fantastic! Visit our Apply page to see our open positions and to apply
+                          (please note we can't interview without a resume). </p>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -756,10 +798,13 @@
           </li>
           <li>
           </li>
-          <a href="http://www.facebook.com/swooftchicago" style="color: black;"><i class="fab fa-facebook-square"></i></a>
+          <a href="http://www.facebook.com/swooftchicago" style="color: black;"><i
+              class="fab fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/swooftchicago/" style="color: black"><i class="fab fa-instagram"></i></a>
-          <a href="http://www.yelp.com/biz/swooft-dog-walking-and-pet-care-chicago" style="color: black"><i class="fab fa-yelp"></i></a>
-          <a href="https://www.youtube.com/channel/UC37oPPjkBDbl7fgrgQ9ekzA?view_as=subscriber" style="color: black;"><i class="fab fa-youtube"></i></a>
+          <a href="http://www.yelp.com/biz/swooft-dog-walking-and-pet-care-chicago" style="color: black"><i
+              class="fab fa-yelp"></i></a>
+          <a href="https://www.youtube.com/channel/UC37oPPjkBDbl7fgrgQ9ekzA?view_as=subscriber" style="color: black;"><i
+              class="fab fa-youtube"></i></a>
         </ul>
         <p>3943 N. Austin Ave. Chicago, IL 60634</p>
       </nav>
@@ -790,3 +835,17 @@
 </body>
 
 </html>
+
+<!--
+ =========================================================
+ * Material Kit - v2.0.6
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
