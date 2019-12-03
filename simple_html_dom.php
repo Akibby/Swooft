@@ -1,8 +1,3 @@
-<!-- 
-  Author: Christian Reynolds
-  CSCI 426 Fall 2019
-  File: simple_html_dom.php
- -->
  <?php
 /**
  * Website: http://sourceforge.net/projects/simplehtmldom/
